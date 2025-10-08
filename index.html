@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Butterbelle - Menyajikan berbagai macam dessert lezat untuk memanjakan lidah Anda.">
+  <meta name="author" content="Butterbelle">
+  <title>Jie Bakery - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <h1>Butterbelle</h1>
+    </div>
+    <ul>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#featured">Best Seller</a></li>
+      <li><a href="#owner">Info</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" placeholder="Search Type">
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content">
+      <h2>Selamat Datang di Butterbelle!</h2>
+      <p>Lezatnya perpaduan manis dan segar dalam setiap gigitan</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div> <!-- tutup hero-content -->
+  </header>
+
+  <!-- Featured Products Section -->
+  <section id="featured">
+    <h2>Our Best Seller Cake</h2>
+    <div class="featured-items">
+      <div class="featured-item" onclick="openModal('chocolateMatcha')">
+        <img src="Chocolate Matcha Cake.jpg" alt="Chocolate Matcha Cake" />
+        <h3>Chocolate Matcha Cake</h3>
+        <p>Lezatnya perpaduan cokelat dan matcha dalam satu gigitan.</p>
+      </div>
+      <div class="featured-item" onclick="openModal('strawberryCheesecake')">
+        <img src="Strawberry Cheesecake.jpg" alt="Strawberry Cheesecake" />
+        <h3>Strawberry Cheesecake</h3>
+        <p>Keju lembut dengan topping stroberi segar yang memanjakan lidah.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Section -->
+  <div id="productModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="chocolateMatcha" class="modal-content">
+      <h2>Chocolate Matcha Cake</h2>
+      <img src="Chocolate Matcha Cake.jpg" alt="Chocolate Matcha Cake" />
+      <p>Lezatnya perpaduan cokelat dan matcha dalam satu gigitan.</p>
+    </div>
+    <div id="strawberryCheesecake" class="modal-content">
+      <h2>Strawberry Cheesecake</h2>
+      <img src="Strawberry Cheesecake.jpg" alt="Strawberry Cheesecake" />
+      <p>Keju lembut dengan topping stroberi segar yang memanjakan lidah.</p>
+    </div>
+  </div>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>Shop Our Products</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img src="Chocolate Matcha Cake.jpg" alt="Chocolate Matcha Cake" />
+        <h3>Chocolate Matcha Cake</h3>
+        <p>Harga: Rp 150.000</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="shop-item">
+        <img src="Strawberry Cheesecake.jpg" alt="Strawberry Cheesecake" />
+        <h3>Strawberry Cheesecake</h3>
+        <p>Harga: Rp 120.000</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="shop-item">
+        <img src="Lotus Cake.jpg" alt="Lotus Biscoff Cake" />
+        <h3>Lotus Biscoff Cake</h3>
+        <p>Harga: Rp 250.000</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="shop-item">
+        <img src="Birthday Cake.jpg" alt="Birthday Cake" />
+        <h3>Birthday Cake</h3>
+        <p>Harga: Rp 180.000</p>
+        <button>Add to Cart</button>
+      </div>
+    </div> <!-- tutup .shop-items -->
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>Tentang Butterbelle</h2>
+    <p>Butterbelle adalah toko roti yang mengkhususkan diri dalam menyajikan berbagai macam dessert lezat, menghadirkan pengalaman kuliner yang tak hanya memanjakan lidah, tetapi juga menggugah selera. Kami dengan cermat memilih bahan-bahan terbaik yang berkualitas tinggi dan mengutamakan rasa yang autentik dalam setiap produk yang kami buat. Resep-resep kami terinspirasi dari tradisi kuliner internasional yang kaya, dengan sentuhan modern yang inovatif.</p>
+
+    <div class="about-images">
+      <div class="about-image" onclick="openModal('image1')">
+        <img src="Bakery Photo 1.jpg" alt="Interior Butterbelle" />
+        <p>Setiap kue yang kami sajikan diproses dengan penuh perhatian dan kasih sayang.</p>
+      </div>
+      <div class="about-image" onclick="openModal('image2')">
+        <img src="Bakery Photo 2.jpg" alt="Bakery Products" />
+        <p>Produk-produk unggulan kami, dari cake matcha cokelat hingga cheesecake stroberi, semuanya dibuat dengan cinta.</p>
+      </div>
+      <div class="about-image" onclick="openModal('image3')">
+        <img src="Gambar Jie Bakery.jpg" alt="Exterior Butterbelle" />
+        <p>Butterbelle dengan desain yang menarik, tempat yang nyaman untuk menikmati waktu berkualitas dengan teman dan keluarga.</p>
+      </div>
+    </div>
+
+  </section>
+
+ <!-- Info Kami Section -->
+<section id="Info" class="owner-section">
+  <div class="owner-container">
+    <div class="owner-text">
+      <h2>Info Kami</h2>
+
+      <div class="info-list">
+        <p><strong>Caecilia Sheryl Kusuma</strong><br>1710623069</p>
+        <p><strong>Kayla Diandra Alisya</strong><br>1710623062</p>
+        <p><strong>Raniyah Kamilah</strong><br>1710623011</p>
+        <p><strong>Alimah Alda Fuadiyah</strong><br>1710623049</p>
+        <p><strong>Jihan Alya Rahma Putri Irmawan</strong><br>1710623084</p>
+
+        <div class="lecturer">
+          <p><strong>Dosen Pengampu: Inkreswari Retno Hardini, S.Kom., M.T.</strong><br>Mata Kuliah: Search Engine Optimization</p>
+        </div>
+      </div>
+    </div
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Butterbelle |</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Modal functionality
+    function openModal(product) {
+      document.getElementById('productModal').style.display = "block";
+      document.getElementById(product).style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById('productModal').style.display = "none";
+      var modalContents = document.querySelectorAll('.modal-content');
+      modalContents.forEach(content => content.style.display = "none");
+    }
+
+    // Scroll to Top functionality
+    window.onscroll = function() { scrollFunction(); };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+      }
+    }
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
